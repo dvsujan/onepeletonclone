@@ -1,0 +1,39 @@
+.blog-card{ 
+    width:400px ; 
+    height:400px ; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding:10px ; 
+}
+
+.blog-card img{ 
+    width:100% ; 
+    z-index: 1;
+}
+
+.blog-content{
+    z-index: 99;
+    width:90% ; 
+    height: 150px;
+    position:relative; 
+    top:-50px; 
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    color:#697180 ; 
+}
+.blog-content h1{ 
+    font-size: 16px;
+
+}
+.blog-content p{ 
+    color:#65666A;
+    font-size: 16px;
+}
+.blog-content hr{ 
+    width:10%; 
+}

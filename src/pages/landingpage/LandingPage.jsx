@@ -4,6 +4,9 @@ import HeroCard from "../../components/herocard/HeroCard";
 import WorkoutSection from "../../components/workoutsection/WorkoutSection";
 import ProductSection from "../../components/productsection/ProductSection";
 import GiftCard from "../../components/giftcard/GiftCard";
+import BlogSection from "../../components/blogsection/BlogSection";
+import PeletonTrail from "../../components/peletontrail/PeletonTrail";
+import TCSection from "../../components/tcsection/TCSection";
 
 const LandingPage = () => {
   return (
@@ -49,6 +52,9 @@ const LandingPage = () => {
       <WorkoutSection />
       <ProductSection />
       <GiftCard/>
+      <BlogSection/>
+      <PeletonTrail/>
+      <TCSection/>
     </div>
   );
 };

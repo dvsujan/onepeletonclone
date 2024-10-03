@@ -1,0 +1,64 @@
+.peleton-trail{ 
+    width:100% ; 
+    height:80vh; 
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.trail-content{ 
+    width:80% ; 
+    height:100%; 
+    display:flex ; 
+    flex-direction: row;
+}
+
+.trail-content-left { 
+    flex:1  ; 
+    width:100% ; 
+    height: 100%;
+    display: flex;
+    align-items: center;
+     justify-content: center;
+}
+
+
+.trail-content-right{ 
+    flex:1  ; 
+    width:100% ; 
+    height: 100%;
+    background:url(https://res.cloudinary.com/peloton-cycle/image/fetch/dpr_1.0,f_auto,q_auto:good,w_1024/https://images.ctfassets.net/7vk8puwnesgc/34uU5SKVqif5Yd3mZbPAiC/3bd987a82af4675f7c6ffa39e5a69f98/Peloton_App_-_Deals_Page_Image__desktop_.png); 
+}
+
+.trail-content-text{ 
+    width:80% ;
+    height:40% ; 
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.trail-content-text h2{ 
+    font-size: 16px;
+
+}
+.trail-content-text h1{ 
+    font-size: 32px;
+}
+.trail-content-text p{ 
+    font-size: 16px;
+    color:rgb(101, 102, 106); 
+
+}
+.trail-content-text h6{ 
+ font-size: 13px;
+    color:rgb(101, 102, 106); 
+}
+.trail-content-text button{ 
+    padding:10px 40px ; 
+    background-color: black ;
+    color:white ; 
+    border:0px ;
+    font-size: 16px;
+    border-radius: 5px ;
+}

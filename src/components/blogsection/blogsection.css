@@ -1,0 +1,56 @@
+.blog-section{ 
+    min-height: 50vh ; 
+    width:100% ; 
+    background-color: white ;
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+}
+
+.find-instructor{ 
+    margin-top:50px ; 
+    width:80% ; 
+    height:30vh ; 
+    border-radius: 20px ;
+    background:url("https://res.cloudinary.com/peloton-cycle/image/fetch/dpr_1.0,f_auto,q_auto:good,w_1024/https://images.ctfassets.net/7vk8puwnesgc/1D54adBNKfhj3aveIBZRQB/38e52ba781d3119c4b35279f397cb662/desktop-quiz-darker.png"); 
+    background-size: cover;
+    color:white ; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.find-instructor h1{ 
+    font-size: 30px;
+    margin:0px 0px 24px ; 
+}
+.find-instructor button{ 
+    padding:10px 40px ; 
+    border:none ;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.peleton-blog{ 
+    margin-top:5% ; 
+    height:60vh ; 
+    width: 100% ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.peleton-blog h1{ 
+    letter-spacing: -0.0125rem;
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.blogs{ 
+    margin-top:5% ; 
+    display: flex;
+    flex-direction: row;
+}
