@@ -1,0 +1,20 @@
+import React from 'react'
+import './productsection.css'
+import ProductCard from '../productcard/ProductCard'
+
+const ProductSection = () => {
+  return (
+    <div className='product-section'>
+        <ProductCard name="Peloton Bike+" description="Our most advanced Bike with a larger rotating screen, auto-resistance, and more." price="999" image="https://res.cloudinary.com/peloton-cycle/image/fetch/dpr_1.0,f_auto,q_auto:good,w_600/https://images.ctfassets.net/7vk8puwnesgc/wE0xDKnYxrha5Z7PWemsX/fd26bfadf5df9026d17c990b2feeecf7/Homepage_bikeplus.png" subscription="$44/mo Peloton All-Access Membership required to access full content on the Peloton Bike+."/>
+        <ProductCard name="Peloton Bike" description="Our most advanced Bike with a larger rotating screen, auto-resistance, and more." price="999" image="https://res.cloudinary.com/peloton-cycle/image/fetch/dpr_1.0,f_auto,q_auto:good,w_600/https://images.ctfassets.net/7vk8puwnesgc/wE0xDKnYxrha5Z7PWemsX/fd26bfadf5df9026d17c990b2feeecf7/Homepage_bikeplus.png" subscription="$44/mo Peloton All-Access Membership required to access full content on the Peloton Bike+."/>
+        <ProductCard name="Peloton Thread+" description="Our most advanced Bike with a larger rotating screen, auto-resistance, and more." price="999" image="https://res.cloudinary.com/peloton-cycle/image/fetch/dpr_1.0,f_auto,q_auto:good,w_600/https://images.ctfassets.net/7vk8puwnesgc/y2Vcgqd9s2i984Ba83imv/d3d6f6d31ffd76788ffb561d511c5742/product-card-treadplus.png" subscription="$44/mo Peloton All-Access Membership required to access full content on the Peloton Bike+."/>
+        <ProductCard name="Peloton Thread" description="Our most advanced Bike with a larger rotating screen, auto-resistance, and more." price="999" image="https://res.cloudinary.com/peloton-cycle/image/fetch/dpr_1.0,f_auto,q_auto:good,w_600/https://images.ctfassets.net/7vk8puwnesgc/4kdWjFVtFNSfGjYmFpmGCU/e9aebab780a801e10c2d33bd49771a46/tread-card.jpg" subscription="$44/mo Peloton All-Access Membership required to access full content on the Peloton Bike+."/>
+        <ProductCard name="Peloton Row" description="Our most advanced Bike with a larger rotating screen, auto-resistance, and more." price="999" image="https://res.cloudinary.com/peloton-cycle/image/fetch/dpr_1.0,f_auto,q_auto:good,w_600/https://images.ctfassets.net/7vk8puwnesgc/3MysN3ZLH5iDn3RJg0nU9e/a3d60b4f5b812157d64b75b7b942ae2a/row-product-card.jpg" subscription="$44/mo Peloton All-Access Membership required to access full content on the Peloton Bike+."/>
+        <ProductCard name="Peloton App" description="Our most advanced Bike with a larger rotating screen, auto-resistance, and more." price="999" image="https://res.cloudinary.com/peloton-cycle/image/fetch/dpr_1.0,f_auto,q_auto:good,w_600/https://images.ctfassets.net/7vk8puwnesgc/T69AXQ4sQdFRnoyIBau1P/9a5dc3ec3a9a926abeb36fc12fc503d1/Product_Images_Cards_smaller.png" subscription="$44/mo Peloton All-Access Membership required to access full content on the Peloton Bike+."/>
+        <ProductCard name="Peloton Thread" description="Our most advanced Bike with a larger rotating screen, auto-resistance, and more." price="999" image="https://res.cloudinary.com/peloton-cycle/image/fetch/dpr_1.0,f_auto,q_auto:good,w_600/https://images.ctfassets.net/7vk8puwnesgc/5iA17KUMDyFHM1scZq4ONJ/2b475fa171716a35df667870afa4e81d/guide-product-card.jpg" subscription="$44/mo Peloton All-Access Membership required to access full content on the Peloton Bike+."/>
+        <ProductCard name="Apparel" description="Now's the time to build a new look."  image="https://res.cloudinary.com/peloton-cycle/image/fetch/dpr_1.0,f_auto,q_auto:good,w_600/https://images.ctfassets.net/7vk8puwnesgc/2xFoYqdTtXYummJv9dJz8d/4b54cd1dd153d4bfbed01ff5fe8cbe4d/Product_Images_Cards.png" />
+    </div>
+  )
+}
+
+export default ProductSection
