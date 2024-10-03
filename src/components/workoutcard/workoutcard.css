@@ -1,0 +1,22 @@
+.workout-card{ 
+    width:300px ; 
+    height:300px ; 
+    display: flex; 
+    align-items: left   ;
+    justify-content: space-around;
+    flex-direction: column;
+    padding:10px; 
+}
+.workout-card img{ 
+    border-radius: 5px;
+    width:100% ; 
+}
+
+.workout-card h2{ 
+    font-size: 14px;
+    font-weight: 600px;
+}
+.workout-card a{ 
+    font-size: 12px;
+    color:#65666A; 
+}
