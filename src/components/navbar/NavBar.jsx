@@ -1,17 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./navbar.css";
-import Logo from '../../assets/logo.svg'; 
+import Logo from "../../assets/logo.svg";
 import { SlLocationPin } from "react-icons/sl";
 import { LuUser2 } from "react-icons/lu";
 import { RiShoppingCartLine } from "react-icons/ri";
 
-
 const NavBar = () => {
+    const [black , setBlack ] = useState(false); 
+  useEffect(() => {
+    const url = window.location.href;
+    if (url.includes("showrooms")) {
+        setBlack(true);
+    }
+  }, []);
   return (
-    <nav>
+    <nav style={{backgroundColor:'black', color:'white'}}>
       <div className="nav-logo">
         <a href="#">
-            <img src={Logo} alt="peleton logo"/>
+          <img src={Logo} alt="peleton logo" />
         </a>
       </div>
       <div className="nav-links">
@@ -36,7 +42,8 @@ const NavBar = () => {
         <a href="#"> Apparel</a>
       </div>
       <div className="nav-info">
-        <SlLocationPin size={25}/> <LuUser2  size={25}/> <RiShoppingCartLine size={25}/>
+        <SlLocationPin size={25} /> <LuUser2 size={25} />{" "}
+        <RiShoppingCartLine size={25} />
       </div>
     </nav>
   );

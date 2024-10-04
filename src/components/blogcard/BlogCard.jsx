@@ -7,7 +7,7 @@ const BlogCard = (props) => {
       <img src={props.image} alt="lool" />
       <div className="blog-content">
         <h1>{props.title}</h1>
-        <hr />
+        <hr/>
         <p>{props.description}</p>
       </div>
     </div>
