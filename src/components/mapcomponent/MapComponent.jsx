@@ -9,8 +9,8 @@ delete L.Icon.Default.prototype._getIconUrl;
 
 L.Icon.Default.mergeOptions({
   iconRetinaUrl:
-    "https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon-2x.png",
-  iconUrl: "https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon.png",
+    "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png",
+  iconUrl: "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png",
   shadowUrl: "https://unpkg.com/leaflet@1.7.1/dist/images/marker-shadow.png",
 });
 
@@ -39,6 +39,7 @@ const MapComponent = () => {
                 <Popup>
                   <h1>{store.display_city}</h1>
                   <p>{store.display_name}</p>
+                  <a href={`/showrooms/${store.slug}`}>View Store</a>
                 </Popup>
               </Marker>
             ))}

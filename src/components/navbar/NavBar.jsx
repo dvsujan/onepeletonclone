@@ -11,7 +11,7 @@ const NavBar = () => {
   useEffect(() => {
     if (window.location.pathname === "/") {
       window.addEventListener("scroll", () => {
-        if (window.scrollY > 100) {
+        if (window.scrollY > 200) {
           setNavColor("rgba(0,0,0,.5)");
         } else {
           setNavColor("transparent");
