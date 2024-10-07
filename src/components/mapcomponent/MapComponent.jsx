@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
@@ -16,14 +16,11 @@ L.Icon.Default.mergeOptions({
 
 const MapComponent = () => {
   const data = useContext(DataContext);
-  useEffect(() => {
-    console.log(data);
-  }, []);
-
   return (
-    <>
+    < >
       {data && (
         <MapContainer
+        className="mobile-hide"
           center={[39.8283, -98.5795]}
           zoom={4}
           scrollWheelZoom={false}

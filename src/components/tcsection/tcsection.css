@@ -10,3 +10,13 @@
 .tc a{ 
     color:#181A1D; 
 }
+
+@media only screen and (max-width: 768px) {
+    .tc{ 
+        width:80% ; 
+        height:auto; 
+        background-color: white;
+        font-size: 13px;
+        color:#181A1D; 
+    }
+}

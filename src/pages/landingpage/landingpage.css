@@ -13,12 +13,12 @@
     height: 100vh;
     background-size: cover;
 }
+
 .hero-content{ 
     width:100% ; 
     height: 70% ;
     background: url(https://images.ctfassets.net/7vk8puwnesgc/6Chkl4XmKkDeGjBsf1EMs1/59ee77cd5c845d49539458522bb9da2c/Hero_Large_-_Walking_USandCA.jpg) no-repeat  ; 
     background-size:100% 100% ; 
-    /* background-color: black; */
 }
 
 .hero-text{ 
@@ -69,4 +69,85 @@
     overflow-x: scroll; 
     align-items: center;
     justify-content: space-around;
+}
+@media (max-width: 767px) {
+    .landing-page {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: rgb(245, 247, 249);
+
+    }
+
+    .hero-section {
+        width: 100%;
+        height: 80vh; 
+    }
+
+    .hero-content {
+        width: 100%;
+        background: url(https://res.cloudinary.com/peloton-cycle/image/fetch/dpr_3.0,f_auto,q_auto:good,w_375/https://images.ctfassets.net/7vk8puwnesgc/5YkRFwExzTqCVpJgQIlCKb/7ca41e3cf94fca0799fd9980ac0c623c/mobile-1.png) no-repeat  ; 
+        background-size: 100% 100%;
+    }
+
+    .hero-text {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(24, 26, 29, 0.5); 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: white;
+        padding: 10px; 
+    }
+
+    .hero-text h1 {
+        font-size: 32px; 
+        font-weight: bold;
+        width: 90%; 
+        text-align: center; 
+    }
+
+    .hero-text p {
+        font-size: 16px; 
+        text-align: center;
+        padding: 0 15px; 
+    }
+
+    .hero-btn {
+        padding: 10px 40px; 
+        border: 0px;
+        border-radius: 5px;
+        margin: 10px;
+        font-size: 14px; 
+    }
+
+    .thread-btn {
+        background-color: #cdff38;
+        color: black;
+        font-weight: bold;
+    }
+
+    .threadp-btn {
+        background-color: transparent;
+        font-weight: bold;
+        color: white;
+        border: 2px solid white;
+    }
+
+    .hero-products {
+        background-color: #f4f7f9;
+        width: 100%;
+        height: auto; 
+        display: flex;
+        flex-direction: row;
+        overflow-x: scroll;
+        align-items: center;
+        justify-content: flex-start; 
+        padding: 10px; 
+    }
 }

@@ -11,7 +11,7 @@ import TCSection from "../../components/tcsection/TCSection";
 const LandingPage = () => {
   return (
     <div className="landing-page">
-      <div className="hero-section">
+      <div className="hero-section" sectionId="transprent" >
         <div className="hero-content">
           <div className="hero-text">
             <p>Peloton Tread & Tread+</p>

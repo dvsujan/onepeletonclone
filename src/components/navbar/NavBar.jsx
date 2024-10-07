@@ -1,26 +1,35 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useInsertionEffect, useState } from "react";
 import "./navbar.css";
 import Logo from "../../assets/logo.svg";
 import { SlLocationPin } from "react-icons/sl";
 import { LuUser2 } from "react-icons/lu";
 import { RiShoppingCartLine } from "react-icons/ri";
+import { useSection } from "../../context/sectioncontext";
 
 const NavBar = () => {
-    const [black , setBlack ] = useState(false); 
+  const [navColor, setNavColor] = useState("transparent");
   useEffect(() => {
-    const url = window.location.href;
-    if (url.includes("showrooms")) {
-        setBlack(true);
+    if (window.location.pathname === "/") {
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 100) {
+          setNavColor("rgba(0,0,0,.5)");
+        } else {
+          setNavColor("transparent");
+        }
+      });
+    } else {
+      setNavColor("black");
     }
   }, []);
   return (
-    <nav style={{backgroundColor:'black', color:'white'}}>
+    // <nav style={{backgroundColor:'black', color:'white'}}>
+    <nav style={{ backgroundColor: navColor }}>
       <div className="nav-logo">
-        <a href="#">
+        <a href="/">
           <img src={Logo} alt="peleton logo" />
         </a>
       </div>
-      <div className="nav-links">
+      <div className="nav-links mobile-hide">
         <select>
           <option value="Home">Classes</option>
         </select>
@@ -41,9 +50,14 @@ const NavBar = () => {
         </select>
         <a href="#"> Apparel</a>
       </div>
-      <div className="nav-info">
-        <SlLocationPin size={25} /> <LuUser2 size={25} />{" "}
-        <RiShoppingCartLine size={25} />
+      <div className="nav-info mobile-hide">
+        <SlLocationPin
+          size={25}
+          onClick={() => {
+            window.location.href = "/showrooms";
+          }}
+        />{" "}
+        <LuUser2 size={25} /> <RiShoppingCartLine size={25} />
       </div>
     </nav>
   );

@@ -5,7 +5,7 @@ import BlogCard from "../blogcard/BlogCard";
 const BlogSection = () => {
   return (
     <div className="blog-section">
-      <div className="find-instructor">
+      <div className="find-instructor mobile-hide">
         <h1>Find your peleton instructor</h1>
         <button>Take quiz</button>
       </div>
