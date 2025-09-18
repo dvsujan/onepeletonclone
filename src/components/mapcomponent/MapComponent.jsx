@@ -91,5 +91,3 @@ const MapComponent = () => {
 };
 
 export default MapComponent;
-
-export default MapComponent;
